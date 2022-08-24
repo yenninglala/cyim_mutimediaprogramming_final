@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSS Template</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style_product.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	</head>
+	<body>
+		<section>
+			<div class="main">
+				<article class="photo">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 2</div>
+							<img src="img/pan1.jpg" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 2</div>
+							<img src="img/pan1.jpg" style="width:100%">
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+					</div>
+				</article>
+				<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+				function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " active";
+				}
+				</script>
+				<article class="produce">
+					<div class="pro">
+						<h1>酥芙蕾</h1>
+						<span class="bNT">NT$ xxxx</span> <span class="aNT">NT$ xxxx</span>
+						<p>時段：<select size="1" name="sport">
+							<option>10:00 ~ 12:00</option>
+							<option>14:00 ~ 16:00</option>
+						</select></p>
+						<p>報名餘額：xxx 人</p>
+						<p>人數：<input class="number" type="number" name="setnumber" value="1" min="1" max="5" /></p>
+						<input class="buy" type="submit" value="立即報名">
+					</div>
+				</article>
+			</div>
+			<hr>
+			<article class="intro">
+				<h2>課程介紹</h2>
+				<p>購買課程所附材料：Xxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+				<p>時間：x月x號 xxx:xxx / xxx:xxx 兩個時段</p>
+				<div class="popover__wrapper">
+				講師：xxxxxxxx
+					<a>
+						<span class="popover__title">(read more)</span>
+					</a>
+					<div class="popover__content">
+						<p class="popover__message">zzzzzzzzzzzzzzzzzz</p>
+						<img alt="" src="img/pan1.jpg">
+					</div>
+				</div>
+				<hr>
+				<p>樣品展示：</p>
+				<img class="intro" src="img/pan1.jpg" alt="">
+				<hr>
+				<p>貼心小提醒：</p>
+				<p>1.光臨當下請記得帶收據或出示手機訂課紀錄，以方便作業。</p>
+				<p>2.收據請妥善保管，本店只認單不認人!</p>
+			</article>
+			<article class="rank">
+				<h2><i class="fab fa-telegram-plane"> 填寫回饋</i></h2>
+				<form class="write">
+					<img src="img/test.jpg" alt="">
+					<span class="data"><p>姓名</p><p>時間</p><p>產品</p></span>
+					<div class="star">
+						<input type="radio" id="star5" name="star" value="★★★★★ 5星" CHECKED hidden />
+						<label for="star5"><i class="fas fa-star"></i></label>
+						<input type="radio" id="star4" name="star" value="★★★★☆ 4星" hidden />
+						<label for="star4"><i class="fas fa-star"></i></label>
+						<input type="radio" id="star3" name="star" value="★★★☆☆ 3星" hidden />
+						<label for="star3"><i class="fas fa-star"></i></label>
+						<input type="radio" id="star2" name="star" value="★★☆☆☆ 2星" hidden />
+						<label for="star2"><i class="fas fa-star"></i></label>
+						<input type="radio" id="star1" name="star" value="★☆☆☆☆ 1星" hidden />
+						<label for="star1"><i class="fas fa-star"></i></label>
+					</div>
+					<textarea name="memo" cols="20" rows="2" wrap="hard" maxlength="30" placeholder="限30字以內"></textarea>
+					<input class="ok" type="submit" value="提交">
+				</form>
+				<h2>課後回饋</h2>
+				<div class="rankall">
+					<div class="rank">
+						<img src="img/test.jpg" alt="">
+						<span class="data"><p>姓名</p><p>時間</p><p>產品</p></span>
+						<span class="star">評分</span>
+						<div class="demo"><p>評論</p></div>
+					</div>
+					<hr>
+				</div>
+			</article>
+			<hr>
+			<article class="like">
+				<h2>其他課程</h2>
+				<div class="row">
+					<div class="column">
+						<a href=""><img src="img/pan1.jpg" alt="" style="width:100%"></a>
+						<div class="overlay" style="width:100%">
+							<div class="class">Hello World</div>
+						</div>
+					</div>
+					<div class="column">
+						<a href=""><img src="img/pan1.jpg" alt="" style="width:100%"></a>
+						<div class="overlay" style="width:100%">
+							<div class="class">Hello World</div>
+						</div>
+					</div>
+					<div class="column">
+						<a href=""><img src="img/pan1.jpg" alt="" style="width:100%"></a>
+						<div class="overlay" style="width:100%">
+							<div class="class">Hello World</div>
+						</div>
+					</div>
+					<div class="column">
+						<a href=""><img src="img/pan1.jpg" alt="" style="width:100%"></a>
+						<div class="overlay" style="width:100%">
+							<div class="class">Hello World</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</body>
+</html>

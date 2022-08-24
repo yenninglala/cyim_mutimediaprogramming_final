@@ -1,0 +1,67 @@
+* {box-sizing: border-box;}
+body {
+font-family: "Papyrus","微軟正黑體";
+cursor: default;
+font-size: 25px;
+min-width:1200px;
+background-size: cover;
+background-repeat: no-repeat;
+text-align: center;
+background-color: lightyellow;
+}
+h1{
+font-size: 40px;
+text-align: center;
+margin-bottom: 0px;
+}
+section:after {
+content: "";
+display: table;
+clear: both;
+}
+@media (max-width: 600px) {
+{
+width: 100%;
+height: auto;
+}
+}
+a{
+color: black;
+text-decoration: none;
+}
+div.choice{
+height: 50px;
+margin-bottom: 20px;
+margin-right: 50px;
+}
+select{
+float: right;
+font-size: 23px;
+padding: 10px;
+border-radius: 30px;
+outline:none;
+}
+.column {
+position: relative;
+float: left;
+width: 30%;
+margin-left: 30px;
+height: 400px;
+}
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.column image {
+float: left;
+display: block;
+width: 100%;
+height: auto;
+}
+.pro{
+background-color: pink;
+width: 100%;
+float: left;
+line-height: 20px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSS Template</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/member.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+	</head>
+	<body>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'Profile')" id="defaultOpen">Profile</button>
+			<button class="tablinks" onclick="openCity(event, 'Replace Profile')">Replace Profile</button>
+			<button class="tablinks" onclick="openCity(event, 'Order Form')">Order Form</button>
+		</div>
+		<div id="Profile" class="tabcontent">
+			<div class="head" align="center"><img src="img/ghead.png" alt="" ></div>
+			<table border="1px">
+				<tr><td width="30%">會員編號：</td><td width="70%"></td></tr>
+				<tr><td width="30%">姓名：</td><td width="70%"></td></tr>
+				<tr><td width="30%">性別：</td><td width="70%"></td></tr>
+				<tr><td width="30%">手機：</td><td width="70%"></td></tr>
+				<tr><td width="30%">E-mail：</td><td width="70%"></td></tr>
+			</table>
+		</div>
+		<div id="Replace Profile" class="tabcontent">
+			<div class="head" align="center"><img src="img/ghead.png" alt="" ></div>
+			<form>
+				<table border="1px">
+					<tr><td width="30%">姓名：</td><td width="70%"><input type="text" name="id"></td></tr>
+					<tr><td width="30%">性別：</td><td width="70%">
+					男<input type="radio" name="gender" value="male">
+					女<input type="radio" name="gender" value="female"></td></tr>
+					<tr><td width="30%">手機：</td><td width="70%"><input type="tel" name="phone" maxlength="10"></td></tr>
+					<tr><td width="30%">E-mail：</td><td width="70%"><input type="email" name="email"></td></tr>
+					
+				</table>
+				<div class="btn">
+					<input class="btn" type="submit" value="確認修改">
+					<input class="btn" type="reset" value="清空">
+				</div>
+			</form>
+		</div>
+		<div id="Order Form" class="tabcontent">
+			<button class="accordion">訂單編號</button>
+			<div class="panel">
+				<p>課程名稱：</p>
+				<p>價錢：</p>
+				<p>時間：</p>
+				<p>人數：</p>
+			</div>
+			<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+		</div>
+		<script src="js/openCity.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

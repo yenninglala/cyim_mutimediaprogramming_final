@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style-1.css">
+		<link rel="stylesheet" type="text/css" href="css/check.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	</head>
+	<body style="background-color: beige;">
+		<header class="header-navigation" id="header">
+			<nav id="nav">
+				<ul>
+					<li>
+						<div class="dropdown">
+							<a class="home">HOME</a>
+							<div class="dropdown-content">
+								<a href="index.html">HOME</a>
+								<a href="menu.html">MENU</a>
+								<a href="#">Link 3</a>
+							</div>
+						</div>
+					</li>&nbsp;
+					<li>
+						<a href="javascript:showDialog()" title="register" class="register">SIGN UP/SIGN IN</a>
+						<div class="ui-dialog" id="dialogMove" onselectstart='return false;'>
+							<div class="ui-dialog-title" id="dialogDrag"  onselectstart="return false;" >
+								<a class="ui-dialog-closebutton" href="javascript:hideDialog();"></a>
+							</div>
+							<div class="login-wrap">
+								<div class="login-html">
+									<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>&nbsp;
+									<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+									<div class="login-form" action="">
+										<form action="" method="">
+											<div class="sign-in-htm">
+												<div class="group">
+													<label for="user" class="label">Username</label>
+													<input id="user" type="text" class="input">
+												</div>
+												<div class="group">
+													<label for="pass" class="label">Password</label>
+													<input id="pass" type="password" class="input" data-type="password">
+												</div>
+												<div class="group">
+													<input type="submit" class="button" value="Sign In">
+												</div>
+												<div class="hr"></div>
+												<div class="foot-lnk">
+													<a href="#" class="forgot">Forgot Password?</a>
+												</div>
+											</div>
+										</form>
+										<form class="pw" action="" method="">
+											<div class="sign-up-htm">
+												<div class="group">
+													<label for="user" class="label">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													<input id="user" type="text" class="input">
+												</div>
+												<div class="group">
+													<label for="user" class="label">Username</label>
+													<input id="user" type="text" class="input">
+												</div>
+												<div class="group">
+													<label for="pass" class="label">Password</label>
+													<input id="password" type="password" class="input pww" data-type="password"><br>
+													<span class="progress-bar_text">Password is blank</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													<i class="fas fa-eye-slash" id="eye"></i>
+												</div>
+												<div class="group">
+													<label for="pass" class="label">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													<input id="pass" type="text" class="input email">
+												</div>
+												<div class="group">
+													<input type="submit" class="button" value="Sign Up">
+												</div>
+												<div class="hr"></div>
+												<div class="foot-lnk">
+													<label for="tab-1">Already Member?</a></label>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		</header>    <!-- /header -->
+		<main>
+			<section id="banner">
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<img src="img/banner.jpg" style="width:100%">
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+						<img src="img/banner4.jpg" style="width:100%">
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 3</div>
+						<img src="img/banner5.jpg" style="width:100%">
+					</div>
+					<div style="text-align:center">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+				</div>
+			</section>
+			<section id="most_popular">
+				<div class="container best_content">
+					<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+					<div class="row">
+						<div class="col-4 girl3">
+							<img src="img/girl3.png" height="450px" alt="">
+						</div>
+						<div class="col-4">
+							<div class="best_table">
+								<h3 class="title" style="color: red;">MOST&nbsp;&nbsp;&nbsp;POPULAR</h3>
+								<div class="best_title">Macarons</div>
+								<a href="#" class="best_table-readmore"><span>Read More</span></a>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="best_table">
+								<h3 class="title" style="color: red;">TOP&nbsp;&nbsp;&nbsp;RATED</h3>
+								<div class="best_title">Pancakes</div>
+								<a href="#" class="best_table-readmore"><span>Read More</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="menu">
+				<div class="container menu_content">
+					<h2>MENU</h2><hr>
+					<img src="img/menu.png" width="100%" alt="menu" usemap="#menumap">
+					<map name="menumap">
+					<area shape="rect" coords="32,600,550,820" alt="macaron" href="product.html">
+						<area shape="rect" coords="600,600,1100,830" alt="pancake" href="product.html">
+							<area shape="rect" coords="32,900,550,1200" alt="chocolate cookie" href="product.html">
+								<area shape="rect" coords="600,900,1100,1200" alt="cupcake" href="product.html">
+									<area shape="rect" coords="32,1200,550,1500" alt="doughnut" href="product.html">
+										<area shape="rect" coords="600,1200,1100,1500" alt="milkshake" href="product.html">
+											</map>
+										</div>
+									</section>
+								</main>
+								<footer id="footer">
+									<div class="container footer">
+										<div class="row">
+											<div class="col-md">
+												<h2 class="">Have a Questions?</h2><hr>
+												<div class="block-23 mb-3">
+													<ul>
+														<li><i class="fas fa-map-marker-alt"></i><span class="text"> 200 Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C. </span></li><br><br>
+														<li><i class="fas fa-phone"></i><span class="text">+886-3-265-9999</span></li><br><br>
+														<li><a href="mailto:cycubox@cycu.edu.tw" class="mail"><i class="fas fa-envelope"></i><span class="text">cycubox@cycu.edu.tw</span></a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-md">
+												<div class="block-23 mb-3">
+													<ul>
+														<li>
+															<span class="inputt input--haruki">
+																<input class="input__field input__field--haruki" type="text" id="input-1" />
+																<label class="input__label input__label--haruki" for="input-1">
+																	<span class="input__label-content input__label-content--haruki">Subscribe Us</span>
+																</label>
+															</span>
+															<button type="button" class="btn btn-sub">Subscribe</button>
+														</li><br><br>
+													</ul>
+												</div>
+											</div>
+											<div class="col-md">
+												<div class="block-23 mb-3" style="padding-top: 20px;">
+													<div class="row">
+														<div class="col">
+															<a href="index.html" class="leaf">首頁</a>
+														</div>
+														<div class="col">
+															<a href="member.html" class="leaf">會員專區</a>
+														</div>
+													</div><br>
+													<div class="row">
+														<div class="col">
+															<a href="" class="leaf">關於我們</a>
+														</div>
+														<div class="col">
+															<a href="menu.html" class="leaf">商品頁面</a>
+														</div>
+													</div><br>
+													<div class="row">
+														<div class="col">
+															<a href="" class="leaf">捐款情況</a>
+														</div>
+														<div class="col">
+															<a href="" class="leaf">FAQ</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><br><br>
+										<div class="row">
+											<div class="col-md-12">
+												<p>
+													Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart" aria-hidden="true"></i> by </p>
+												</div>
+											</div>
+										</div>
+									</footer>
+									<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+									<script src="js/banner.js" type="text/javascript" charset="utf-8"></script>
+									<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+									<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+									<script src="js/password.js" type="text/javascript" charset="utf-8"></script>
+									<script src="js/eye.js" type="text/javascript" charset="utf-8"></script>
+									<script src="js/classie.js" type="text/javascript" charset="utf-8"></script>
+								</body>
+							</html>
